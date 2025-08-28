@@ -7,8 +7,8 @@ const supabase = createClient(
 );
 
 export default async function handler(req, res) {
-  // Security check
-  if (req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) {
+  // Allow GET requests from external cron services (optional security via query param)
+  if (req.method === 'GET' && req.query.secret !== process.env.CRON_SECRET) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
 
