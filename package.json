@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vercel dev",
-    "build": "vercel build",
-    "deploy": "vercel"
+    "start": "node api/webhook.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
