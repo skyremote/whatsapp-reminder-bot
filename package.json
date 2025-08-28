@@ -1,0 +1,29 @@
+{
+  "name": "whatsapp-reminder-bot",
+  "version": "1.0.0",
+  "description": "AI-powered WhatsApp reminder bot with natural language processing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "openai": "^4.24.0",
+    "date-fns": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "reminder",
+    "bot",
+    "ai",
+    "vercel",
+    "supabase"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

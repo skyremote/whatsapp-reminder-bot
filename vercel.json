@@ -1,0 +1,14 @@
+{
+  "crons": [{
+    "path": "/api/send-reminders",
+    "schedule": "* * * * *"
+  }],
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node"
+    }
+  },
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
